@@ -76,10 +76,6 @@ try:
     driver.execute_script("arguments[0].scrollIntoView(true);", vote_button)
     time.sleep(2)  # Wait for scrolling to complete
 
-    # fill the text field with the name "Junnu Gajula" with id = v 
-    name_field = driver.find_element(By.ID, 'v')
-    name_field.send_keys("Junnu Gajula")
-
 
     # Use JavaScript to click the button (to bypass overlapping elements)
     driver.execute_script("arguments[0].click();", vote_button)
